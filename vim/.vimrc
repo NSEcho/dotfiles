@@ -75,6 +75,7 @@ Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'fatih/vim-go'
 Plug 'mattn/gist-vim'
 Plug 'https://github.com/preservim/nerdtree'
+Plug 'khaveesh/vim-fish-syntax'
 
 call plug#end()
 
