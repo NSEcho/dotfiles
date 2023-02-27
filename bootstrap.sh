@@ -34,4 +34,11 @@ brew bundle --file=Brewfile
 
 # Install basic python tools
 running "Install python packages"
-pip3 install objection frida-tools --upgrade
+pip3 install objection frida-tools --upgrade > /dev/null 2>&1
+
+running "Changing default shell to fish"
+chsh -s $(which fish)
+
+echo $(gum style --bold --foreground "#5ce1e6" " ⇒ ") $(gum style --bold "Finished bootstrapping")
+
+lldb/install.fish
