@@ -2,6 +2,8 @@
 
 Simple to install and configure dotfiles.
 
+Not yet finished, but the raw idea is there.
+
 # usage
 
 ```bash
