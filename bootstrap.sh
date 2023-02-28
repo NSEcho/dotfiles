@@ -37,6 +37,7 @@ chsh -s $(which fish)
 
 echo $(gum style --bold --foreground "#5ce1e6" " ⇒ ") $(gum style --bold "Finished bootstrapping")
 
+fish/install.fish
 lldb/install.fish
 vim/install.fish
 frida/install.fish
