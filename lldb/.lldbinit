@@ -35,8 +35,8 @@ command regex getType 's/(.*)/po type(of: %1)/'
 command regex -h "Change text of label, by calling setText method" -s "changeText 0xabcdabcd echo" changeText 's/([^ ]+) (.+)/po [%1 setText:@"%2"]; [CATransaction flush];/'
 
 # Script imports
-command script import ~/lldb_scripts/GetButtonMethod.py
-command script import ~/lldb_scripts/GetASLR.py
+command script import ~/lldb-scripts/GetButtonMethod.py
+command script import ~/lldb-scripts/GetASLR.py
 
 # General settings
 settings set target.x86-disassembly-flavor intel
