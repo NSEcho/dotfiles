@@ -89,3 +89,4 @@ autocmd BufNewFile root.go 0r ~/vimskeletons/root.go
 autocmd BufNewFile version.txt 0r ~/vimskeletons/version.txt
 autocmd BufNewFile README.md 0r ~/vimskeletons/README.md
 autocmd BufNewFile FridaGadget.config 0r ~/vimskeletons/FridaGadget.config
+autocmd BufNewFile *.ctor.c 0r ~/vimskeletons/ctor.c
