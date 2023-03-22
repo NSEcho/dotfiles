@@ -23,6 +23,7 @@ command alias cre expression -l objc -O -- (char*)
 #   nr - find next responder of object
 #   getType - print type of object in swift context
 #   changeText - change text property of object, by calling setText method
+#   oobj - create new ObjC object
 
 command regex google 's/(.*)/script import os; from urllib.parse import urlencode, quote_plus; query = urlencode({"q": "%1"}, quote_via=quote_plus);os.system("open https:" + chr(47)*2 + "www.google.com" + chr(47) + "search?" + query)/'
 command regex conniPhone 's+(.*)+process connect connect://127.0.0.1:%1+'
@@ -35,6 +36,7 @@ command regex flush 's/(.*)/po %1 ; [CATransaction flush];/'
 command regex nr 's/(.*)/po [%1 nextResponder]/'
 command regex getType 's/(.*)/po type(of: %1)/'
 command regex -h "Change text of label, by calling setText method" -s "changeText 0xabcdabcd echo" changeText 's/([^ ]+) (.+)/po [%1 setText:@"%2"]; [CATransaction flush];/'
+command regex -h "Create new ObjC object." -s "oobj NSString var_name" oobj 's/([^ ]+) (.*)/po %1* $%2 = (%1*)[[%1 alloc] init]/'
 
 # Script imports
 command script import ~/lldb-scripts/GetButtonMethod.py
