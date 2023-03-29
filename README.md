@@ -7,7 +7,7 @@ Not yet finished, but the raw idea is there.
 # usage
 
 ```bash
-$ git clone https://github.com/lateralusd/dotfiles.git && cd dotfiles
+$ git clone https://github.com/nsecho/dotfiles.git && cd dotfiles
 $ ./bootstrap.sh
 
 ```
