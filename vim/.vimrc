@@ -76,6 +76,8 @@ Plug 'fatih/vim-go'
 Plug 'mattn/gist-vim'
 Plug 'https://github.com/preservim/nerdtree'
 Plug 'khaveesh/vim-fish-syntax'
+Plug 'https://github.com/preservim/vim-markdown'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
