@@ -17,7 +17,7 @@ end
 
 print "Downloading latest frida devkit"
 
-set -l mtype (machine)
+set -l mtype "arm64"
 set -l latest (curl --silent "https://api.github.com/repos/frida/frida/releases/latest" | jq -r .tag_name)
 print "Downloading version $latest for $mtype"
 
